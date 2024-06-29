@@ -1,5 +1,5 @@
 # i8086-Visual-Emulator-
-a unity 2d game that visualises in real time the internal state, data flow of the intel 8086 while executing assembly code
+a unity 2d interface that visualises in real time the internal state, data flow of the intel 8086 while executing assembly code
 
 -the cpu is emulated/represented by a class containing other components represented also by thier respective data structure/classe
 -the interal components such as registers are represnted by a classe, data is held within attributes of the class
