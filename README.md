@@ -1,8 +1,19 @@
 # i8086-Visual-Emulator-
-a unity 2d interface that visualises in real time the internal state, data flow of the intel 8086 while executing assembly code
+a unity 2d interface that visualises in real time the internal state, data flow of the intel 8086 while executing i8086 assembly code in a virtual machine
 
--the cpu is emulated/represented by a class containing other components represented also by thier respective data structure/classe
--the interal components such as registers are represnted by a classe, data is held within attributes of the class
+the virtual machine consists of : 
+CPU_core module: virtual representation of the execution unit in a form of a class , responsible for memroy allocation and instruction execution , emulates the behaviour of the ALU and BIU 
+Memory module: virtual represenation of the RAM, contains data structures in form of USHORTS to hold the ram data, negative values are  stored the same way in i8086..
+
+
+the commpiler consists of : 
+
+lexer module: reads the text instruction from the unity 2d interface one by one , and splits them into Tokens 
+parser module: recieves the tokens from the lexer , uses recursive decente methode to performe syntaxical analysisn and the end of every rule, performs semantical analysis if needed...
+
+the visualiser consists of: 
+AnimationGenerator module:  using a pseudo-code language we made , it takes the current instruction and transforms it into code in this language 
+AnimationController module: the last layer between that communicates directly with the 2d interface, takes in input code wirtten in language mentioned above , in output makes changes in the interface (such color change of a compnenet, register value change....)
 
 brief overview of the execution mechanisme: 
 
@@ -16,6 +27,9 @@ brief overview of the execution mechanisme:
 -the animations are eather text updates, color changes , moving objects....
 
 
+PS: TO LEARN MORE ABOUT THIS PROJECT PLEASE CONSULT THE MEMOIRE
+
+
 
 
 
@@ -27,3 +41,4 @@ to launche:
 -press "pas avant" to start execution the code instruction by instruction (the current instruction is highlited in yellow)
 -press "lire" to see the animation 
 -you can also reduce  or increase the speed of the animation by pressing vitess + or vitess -
+-to go to the next instruction  press pas avant again...
