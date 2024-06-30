@@ -27,7 +27,9 @@ brief overview of the execution mechanisme:
 -the animations are eather text updates, color changes , moving objects....
 
 
-PS: TO LEARN MORE ABOUT THIS PROJECT PLEASE CONSULT THE MEMOIRE
+PS: TO LEARN MORE ABOUT THIS PROJECT PLEASE CONSULT THE MEMOIRE HERE 
+
+https://drive.google.com/file/d/15oCISNob4TCXFv5j_5bS7qM_wElhvVz_/view?usp=sharing
 
 
 
